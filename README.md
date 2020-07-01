@@ -15,10 +15,10 @@ No installation of this utility is required. This utility is designed to be sour
 
 **USAGE:**\
 To run the utility, cd or initialize VMD in the folder containing the script and source it with the following cmdline arguments:\
-```source tapping_convolution_sim_util.tcl -args NAME RADIUS THETA RES XMIN XMAX YMIN YMAX (TOL, ITER)```
+```
+source tapping_convolution_sim_util.tcl -args NAME RADIUS THETA RES XMIN XMAX YMIN YMAX (TOL, ITER)
+```
 > (Command-line batch execution is also possible, as seen in `batch_submit_sim_tapping_util.sh`)
-
-**NOTE: structure_models/ is a REQUIRED subfolder for correct function (where the script looks for your molecular structures)**
 
 ```
 Variables:
@@ -31,6 +31,7 @@ Variables:
   TOL = optional parameter, number of allowed tip/protein overlaps at convergence, defaults to 0
   ITER = optional parameter, job number for batch jobs, not used for single runs
 ```
+**NOTE: structure_models/ is a REQUIRED subfolder for correct function (where the script looks for your molecular structures)**\
 
 The above command will perform a continuous linescan over all points in the 2D space defined by the MIN/MAX dimensions. The arguments used to produce the example output can be found in the example 'batch_submit_tapping_util.sh' file. Reproducing the example output (240 A x 240 A area at 0.5 A resolution) on a single core takes ~60 hours on a single core (230,400 points total, ~4000 points/hour). Since all points can be evaluated independently, multiple VMD instances can be run in batch mode and then concatenated together. This effectively drops the run time inversely to the degree of parallelization.\
 
