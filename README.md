@@ -17,6 +17,7 @@ No installation of this utility is required. This utility is designed to be sour
 To run the utility, cd or initialize VMD in the folder containing the script and source it with the following cmdline arguments:\
 ```source tapping_convolution_sim_util.tcl -args NAME RADIUS THETA RES XMIN XMAX YMIN YMAX (TOL, ITER)```
 > (Command-line batch execution is also possible, as seen in `batch_submit_sim_tapping_util.sh`)
+
 **NOTE: structure_models/ is a REQUIRED subfolder for correct function (where the script looks for your molecular structures)**
 
 ```
