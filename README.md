@@ -23,14 +23,14 @@ source tapping_convolution_sim_util.tcl -args NAME RADIUS THETA RES XMIN XMAX YM
 
 ```
 Variables:
-  NAME = filename (prior to '.pdb') of the target structure, which must be located in the subfolder "structure_models"
-  RADIUS = radius of tip probe, in angstroms
-  THETA = half-angle of tip probe, in degrees
-  RES = spatial resolution of output, in angstroms
+  NAME      = filename (prior to '.pdb') of the target structure, which must be located in the subfolder "structure_models"
+  RADIUS    = radius of tip probe, in angstroms
+  THETA     = half-angle of tip probe, in degrees
+  RES       = spatial resolution of output, in angstroms
   XMIN/XMAX = boundaries of X-dimension
   YMIN/YMAX = boundaries of Y-dimension
-  TOL = optional parameter, number of allowed tip/protein overlaps at convergence, defaults to 0
-  ITER = optional parameter, job number for batch jobs, not used for single runs
+  TOL       = optional parameter, number of allowed tip/protein overlaps at convergence, defaults to 0
+  ITER      = optional parameter, job number for batch jobs, not used for single runs
 ```
 > (Command-line batch execution is also possible, as seen in `batch_submit_sim_tapping_util.sh`)
 
