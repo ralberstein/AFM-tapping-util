@@ -55,7 +55,7 @@ The EXAMPLE/ folder contains:
 > The arguments used to produce the example output can be found in the `batch_submit_tapping_util.sh` file in EXAMPLE/. 
 
 **NOTES AND CAVEATS:**\
-Note: Only tested only with PDB-format molecular coordinates (so far), but should work with any molecule that VMD can read in. ~!
+Note: Only tested only with PDB-format molecular coordinates (so far), but should work with any molecule that VMD can read in.
 
 Minor caveat: The script uses the last atom of the PDB file as the probe tip. Depending on the initial position of that atom, an extremely minor image artifact could technically arise, though it should be negligible. In case of concern, a dummy atom PDB file has been stored in structure_models/ which can be appended to the end of the user's molecular structure to avoid this possibility.
 
