@@ -1,5 +1,5 @@
 # AFM-tapping-util
-** VMD-powered Tcl script for producing simulated scanning probe microscopy images (including tip convolution artifacts) from molecular structures. **
+** VMD-powered Tcl script for producing simulated scanning probe microscopy images (including tip convolution artifacts) from molecular structures. **\n
 **** Robert Alberstein, June 2020 ****
 
 DESCRIPTION:
